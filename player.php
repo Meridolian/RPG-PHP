@@ -2,13 +2,13 @@
 
     class Player {
 
-        $Classe = 0; // 1 = Guerrier && 2 = Mage && 3 = Archer
-        $Health = 100; // Barre de vie de base qui est égale à 100 Points de vie
-        $Damage = 15; // Dégât de base d'une valeur de 15
-        $Exp = 0; // Expérience acquises allant de 0 à 100
-        $Level = 1; // Niveau supérieur une fois que l'expérience est à 100 && Niveau de base = 1
-        $HealthMonster = 100; // Vie du monstre 
-        $DamageMonster = 5; // Dégâts du monstre
+        public $Classe = 0; // 1 = Guerrier && 2 = Mage && 3 = Archer
+        public $Health = 100; // Barre de vie de base qui est égale à 100 Points de vie
+        public $Damage = 15; // Dégât de base d'une valeur de 15
+        public $Exp = 0; // Expérience acquises allant de 0 à 100
+        public $Level = 1; // Niveau supérieur une fois que l'expérience est à 100 && Niveau de base = 1
+        public $HealthMonster = 100; // Vie du monstre 
+        public $DamageMonster = 5; // Dégâts du monstre
 
         function InitClasse() { // Fonction qui permettra d'initialiser la classe du personnage
             if ($Classe = "Guerrier") { // Guerrier
@@ -46,10 +46,6 @@
 
         function DamageToMonster() { // Fonction qui permet de perdre de la vie lors d'une attaque en fonction des dommages du personnages
             $HealthMonster - $Damage;
-        }
-
-
-
-        
+        }        
     }
 ?>
